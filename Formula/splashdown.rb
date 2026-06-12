@@ -12,7 +12,7 @@ class Splashdown < Formula
 
   resource "argcomplete" do
     url "https://files.pythonhosted.org/packages/38/61/0b9ae6399dd4a58d8c1b1dc5a27d6f2808023d0b5dd3104bb99f45a33ff6/argcomplete-3.6.3.tar.gz"
-    sha256 "6abaf921a8f82eb493873dda9ff85f3e4c12ce64c1d745e521f91e44d70c1c5e"
+    sha256 "62e8ed4fd6a45864acc8235409461b72c9a28ee785a2011cc5eb78318786c89c"
   end
 
   def install
