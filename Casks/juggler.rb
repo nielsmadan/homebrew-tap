@@ -1,6 +1,6 @@
 cask "juggler" do
-  version "1.4.3"
-  sha256 "11269191dc60f4f653103c833a6e7aabbccd62d2385be57ec80f19d48588f8c3"
+  version "1.5.0"
+  sha256 "34d9ce9583da3ec3d803ef4698b6352b77ac18ace5ccbf80f126150d963b8788"
 
   url "https://github.com/nielsmadan/juggler/releases/download/v#{version}/Juggler.dmg"
   name "Juggler"
