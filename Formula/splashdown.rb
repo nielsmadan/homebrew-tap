@@ -3,8 +3,8 @@ class Splashdown < Formula
 
   desc "Per-checkout resource provisioner: sims, ports, env templates for git worktrees"
   homepage "https://github.com/nielsmadan/splashdown"
-  url "https://github.com/nielsmadan/splashdown/archive/refs/tags/v0.11.0.tar.gz"
-  sha256 "76c02f35350ef3fa97f9c8e94c2cb5003431b6487e14d24de494360489eca8c7"
+  url "https://github.com/nielsmadan/splashdown/archive/refs/tags/v0.12.0.tar.gz"
+  sha256 "0b985cf4909af3d4fb9e4108ea08cffe36a8d25a4a27ab04c6438b255e261410"
   license "MIT"
   head "https://github.com/nielsmadan/splashdown.git", branch: "main"
 
