@@ -1,24 +1,30 @@
 cask "juggler" do
-  version "1.7.2"
-  sha256 "94ed9273920a8ee4eecb0c95dd424b23050449cd103f2e9028a84e8994278072"
+  version "1.8.0"
+  sha256 "9594cbe11a826c60de7603f3e3dc88a5fe2ecd60204fa82b31261e4331c69171"
 
   url "https://github.com/nielsmadan/juggler/releases/download/v#{version}/Juggler.dmg"
   name "Juggler"
-  desc "Global hotkey navigation for Claude Code sessions"
-  homepage "https://github.com/nielsmadan/juggler"
-
-  depends_on macos: ">= :sonoma"
+  desc "Global hotkey navigation for coding agent sessions"
+  homepage "https://jugglerapp.com/"
 
   livecheck do
     url :url
     strategy :github_latest
   end
 
+  auto_updates true
+  depends_on macos: :sequoia
+
   app "Juggler.app"
 
-  zap trash: [
-    "~/Library/Application Support/Juggler",
-    "~/Library/Preferences/com.nielsmadan.Juggler.plist",
-    "~/Library/Caches/com.nielsmadan.Juggler",
-  ]
+  uninstall quit: "com.nielsmadan.Juggler"
+
+  zap script: {
+        executable: "#{staged_path}/Juggler.app/Contents/Resources/uninstall.sh",
+      },
+      trash:  [
+        "~/Library/Application Support/Juggler",
+        "~/Library/Caches/com.nielsmadan.Juggler",
+        "~/Library/Preferences/com.nielsmadan.Juggler.plist",
+      ]
 end
