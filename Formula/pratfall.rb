@@ -3,8 +3,8 @@ class Pratfall < Formula
 
   desc "Run installed coding agents through named profiles"
   homepage "https://github.com/nielsmadan/pratfall"
-  url "https://github.com/nielsmadan/pratfall/archive/refs/tags/v0.9.0.tar.gz"
-  sha256 "85c11d5a3c6dec6556ca3b8d020fe256ff7ae38b670b1c3d2d8cc23654b0c416"
+  url "https://github.com/nielsmadan/pratfall/archive/refs/tags/v0.9.1.tar.gz"
+  sha256 "06cbf67dc99acc8521ef452e6c735dc4c4de3aad51c2c9a93f39e7aac7804816"
   license "MIT"
   head "https://github.com/nielsmadan/pratfall.git", branch: "main"
 
