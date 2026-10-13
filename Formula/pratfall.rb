@@ -1,10 +1,10 @@
 class Pratfall < Formula
   include Language::Python::Virtualenv
 
-  desc "Run installed coding agents through named profiles"
+  desc "One-shot coding agents for scripts and pipes"
   homepage "https://github.com/nielsmadan/pratfall"
-  url "https://github.com/nielsmadan/pratfall/archive/refs/tags/v1.0.0.tar.gz"
-  sha256 "fe341b96064c7929fe7ed5c53040f7c85b8bd5f884e9ac27181e13b95046d90b"
+  url "https://github.com/nielsmadan/pratfall/archive/refs/tags/v1.1.0.tar.gz"
+  sha256 "9c88489bf6767e8dc02c0f6b7b4fea338eb92e50c08b111da569074b45731944"
   license "MIT"
   head "https://github.com/nielsmadan/pratfall.git", branch: "main"
 
@@ -44,10 +44,13 @@ class Pratfall < Formula
     venv = virtualenv_create(libexec, "python3.13")
     venv.pip_install resources
     venv.pip_install_and_link buildpath, build_isolation: false
+    generate_completions_from_executable(bin/"prat", "completion", shells: [:bash, :zsh])
   end
 
   test do
-    assert_match "Run installed coding agents", shell_output("#{bin}/prat --help")
+    assert_match "One-shot coding agents for scripts and pipes", shell_output("#{bin}/prat --help")
     assert_match "codex", shell_output("#{bin}/prat agents")
+    assert_match "#compdef prat", shell_output("#{bin}/prat completion zsh")
+    assert_match "codex", shell_output("#{bin}/prat __complete cod")
   end
 end
