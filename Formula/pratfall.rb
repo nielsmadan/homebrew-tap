@@ -3,8 +3,8 @@ class Pratfall < Formula
 
   desc "One-shot coding agents for scripts and pipes"
   homepage "https://github.com/nielsmadan/pratfall"
-  url "https://github.com/nielsmadan/pratfall/archive/refs/tags/v1.2.0.tar.gz"
-  sha256 "87ad8155a1281605491de12c4c4dda2e8997148ef51ac774e1579179179514ef"
+  url "https://github.com/nielsmadan/pratfall/archive/refs/tags/v1.3.0.tar.gz"
+  sha256 "3a93104d636e09b59ca6eb0ca5a3804ccdc5807d3950d0e9006601a7b624dfeb"
   license "MIT"
   head "https://github.com/nielsmadan/pratfall.git", branch: "main"
 
