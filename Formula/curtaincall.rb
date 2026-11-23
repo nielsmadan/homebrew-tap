@@ -3,8 +3,8 @@ class Curtaincall < Formula
 
   desc "Policy-driven local release preparation and atomic Git publication"
   homepage "https://github.com/nielsmadan/curtaincall"
-  url "https://github.com/nielsmadan/curtaincall/archive/refs/tags/v2.1.0.tar.gz"
-  sha256 "c86fa4c04fcce66b9b809180964d3c16291a31d788e7f7b5d3f442c6b732b374"
+  url "https://github.com/nielsmadan/curtaincall/archive/refs/tags/v2.2.0.tar.gz"
+  sha256 "0a409d7667d1c76a2bce0438c4d34786d79af7dd3b5d2458243878aad8df68a2"
   license "MIT"
   head "https://github.com/nielsmadan/curtaincall.git", branch: "main"
 
