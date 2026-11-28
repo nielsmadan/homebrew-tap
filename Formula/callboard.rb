@@ -3,8 +3,8 @@ class Callboard < Formula
 
   desc "Chat, mail and pings between coding agents, rung through bellhop"
   homepage "https://github.com/nielsmadan/callboard"
-  url "https://github.com/nielsmadan/callboard/archive/refs/tags/v0.1.0.tar.gz"
-  sha256 "088555a1c738f44d8918794f0c95e081261733239c1d67fcea09e5180ec13077"
+  url "https://github.com/nielsmadan/callboard/archive/refs/tags/v0.2.0.tar.gz"
+  sha256 "8143cc865787a8dad80c6354f6acaecfadf201b33de2522e2745210c6dfed814"
   license "MIT"
   head "https://github.com/nielsmadan/callboard.git", branch: "main"
 
